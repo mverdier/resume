@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="MainController">
+	<head>
+		<meta charset="utf-8" />
+		<title>Résumé - {{ person.name }}</title>
+		<link rel="stylesheet" href="css/resume.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="js/angular.min.js"></script>
+	</head>
+
+	<body>
+		<header class="container">
+			<div class="row">
+		      	<div class="col-sm-2">
+		        	<img ng-src="{{ person.picture }}" class="profile-picture">
+		      	</div>
+		      	<div class="col-sm-2 center name">
+		        	<p>{{ person.name }}</p>
+		      	</div>
+		      	<div class="col-sm-4 center title">
+		        	<p>{{ person.role }}</p>
+		      	</div>
+		      	<div class="col-sm-4 center contact">
+		        	<p ng-if="person.phone && person.phoneDisplay">
+		        		<i class="material-icons">phone</i>&nbsp<a ng-href="tel:{{ person.phone }}">{{ person.phoneDisplay }}</a>
+		        	</p>
+		        	<p ng-if="person.email">
+		        		<i class="material-icons">mail</i>&nbsp<a ng-href="mailto:{{ person.email }}">{{ person.email }}</a>
+		        	</p>
+		        	<p ng-if="person.github">
+		        		<img src="resources/GitHub-Mark/PNG/GitHub-Mark-32px.png" class="github-icon">&nbsp<a ng-href="{{ person.github }}">mverdier</a>
+		        	</p>
+		      	</div>
+		    </div>
+		</header>
+
+		<section class="container">
+			<div class="row content">
+		      	<div class="col-sm-5 skills">
+		      		<h3 ng-if="!locale || locale == 'enUS'">Skills</h3>
+		      		<h3 ng-if="locale == 'frFR'">Compétences</h3>
+		      		<p>Content</p>
+		        </div>
+
+		      	<div class="col-sm-5 work">
+		      		<h3 ng-if="!locale || locale == 'enUS'">Work Experience</h3>
+		      		<h3 ng-if="locale == 'frFR'">Expérience Professionnelle</h3>
+		      		<div class="job" ng-repeat="contract in work">
+                        <h4 class="job-role">{{ contract.role }}</h4>
+                        <div class="job-dates">{{ contract.dates }}</div>
+                        <div class="job-company">{{ contract.company }}</div>
+
+                        <div class="job-title">{{ contract.title }}</div>
+                        
+                        <div class="job-location">{{ contract.location }}</div>
+                        <div class="job-tasks">{{ contract.tasks }}</div>
+                        <div class="job-techs">{{ contract.techs }}</div>                        
+                        <div class="job-url">
+                            <a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>
+	                    </div>
+					</div>    
+				</div>
+
+				<div class="school col-sm-5 work">
+		      		<h3 ng-if="!locale || locale == 'enUS'">School Degrees</h3>
+		      		<h3 ng-if="locale == 'frFR'">Diplômes</h3>
+					<div class="degree" ng-repeat="degree in school">
+						<div class="school-title">{{ degree.title }}</div>
+						<div class="school-dates">{{ degree.dates }}</div>
+						<div class="school-location">{{ degree.location }}</div>
+			      	</div>
+			     </div>
+
+	        	<div class="personal col-sm-5 misc">
+		      		<h3 ng-if="!locale || locale == 'enUS'">Miscellaneous Information</h3>
+		      		<h3 ng-if="locale == 'frFR'">Diverses Informations</h3>
+	        		<p>Content</p>
+		      	</div>
+		    </div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row" ng-if="!locale || locale == 'enUS'">
+					<p>Résumé designed and developed by <a href="http://martin-verdier.com/">Martin Verdier</a> around October 2016.  I'm not the best with front-end but I try!</p>
+					<p>OCTOCAT® is the property of GitHub, Inc. They allow its use on profiles or things like that, but I'd rather link back to them anyway <a href="https://github.com/logos">here</a>!</p>
+					<p>Speaking of which, this résumé is under the MIT License, and you can easily use it as a template for yours, it's open-sourced right <a href="https://github.com/mverdier/resume">here on GitHub</a>!</p>
+				</div>
+
+				<div class="row" ng-if="locale == 'frFR'">
+					<p>CV réalisé et développé par <a href="http://martin-verdier.com/">Martin Verdier</a> autour d'Octobre 2016.  Je ne suis pas le meilleur en front-end mais je fais des efforts !</p>
+					<p>OCTOCAT® est la propriété de GitHub, Inc. Ils autorisent sont utilisation sur des profils et ce genre de choses, mais je préfère rediriger vers eux <a href="https://github.com/logos">ici</a> tout de même !</p>
+					<p>À ce propos, ce résumé est sous license MIT, and you can easily use it as a template for yours, it's open-sourced right <a href="https://github.com/mverdier/resume">here on GitHub</a> !</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Modules -->
+	    <script src="js/app.js"></script>
+
+	    <!-- Controllers -->
+	    <script src="js/controllers/MainController.js"></script>
+	
+	</body>
+</html>

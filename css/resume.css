@@ -1,5 +1,5 @@
 body {
-	font-family: 'Roboto';
+	font-family: 'Roboto' !important;
 }
 
 .profile-picture {
@@ -58,4 +58,26 @@ header .row {
 	background-color: #DBE7E7;
 	margin: 5px;
 	border-radius: 5px;
+}
+
+footer {
+	margin-top: 40px;
+	font-size: 12px;
+}
+
+section {
+	margin-top: 40px;
+}
+
+.job {
+	margin-bottom: 10px;
+}
+
+.job-role {
+	margin-bottom: 0;
+}
+
+.job-dates, .job-company {
+	display: inline-block;
+	margin-right: 15px;
 }
