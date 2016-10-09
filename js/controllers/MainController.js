@@ -10,7 +10,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"phoneDisplay": "(+33) 6 24 72 64 58", //Your phone for the display, the one that a human can easily read!
 		"email": "mart.verdier@gmail.com", //Your email
 		"picture": "resources/profile.png", //The relative path to your picture in the project's folder (relative to resume.html)
-		"github": "https://github.com/mverdier" //Your GitHub, is you have one
+		"github": "mverdier" //Your GitHub link, is you have one
 	};
 
 	$scope.school = [{
@@ -38,7 +38,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"techs": "HTML5, CSS3, JS, PHP, SQL, Android",
 		"url": "http://qeepr.com/",
 		"displayUrl": "www.qeepr.com",
-		"tasks": "Entirely remade signup, login, and genealogy tree pages\nAdded picture uploading feature to the signup page\nAdded a QR code selling feature <i>via</i> the website\nUpdated and developed several features\nDeveloped an Android application using geolocation, QR code scanning, and website data access features"
+		"tasks": "Entirely remade signup, login, and genealogy tree pages\nAdded picture uploading feature to the signup page\nAdded a QR code selling feature in the website\nUpdated and developed several features\nDeveloped an Android application using geolocation, QR code scanning, and website data access features"
 	},
 	{
 		"contract": "One-year Apprenticeship",
@@ -62,4 +62,102 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"displayUrl": "www.telegrafik.eu",
 		"tasks": "Following the tasks done during the apprenticeship contract\nWork distribution to other developers\nSupervision and validation of other developers' work\nManaging software deployment process, branch merging, production pushes"
 	}]
+
+	$scope.skills = [{
+		"category": "Object-Oriented Programming",
+		"skills": [{
+			"name": "Java",
+			"level": "***"
+		},
+		{
+			"name": "PHP",
+			"level": "**"
+		},
+		{
+			"name": "C++",
+			"level": "**"
+		},
+		{
+			"name": "C#",
+			"level": "**"
+		},
+		{
+			"name": "Ruby",
+			"level": "*"
+		}]
+	},
+	{
+		"category": "Web Development",
+		"skills": [{
+			"name": "HTML5",
+			"level": "**"
+		},
+		{
+			"name": "CSS3",
+			"level": "**"
+		},
+		{
+			"name": "JavaScript",
+			"level": "***"
+		},
+		{
+			"name": "AngularJS",
+			"level": "**"
+		}]
+	},
+	{
+		"category": "Databases",
+			"skills": [{
+			"name": "MongoDB",
+			"level": "***"
+		},
+		{
+			"name": "SQL",
+			"level": "**"
+		}]
+	},
+	{
+		"category": "Systems",
+		"skills": [{
+			"name": "Linux",
+			"level": "**"
+		},
+		{
+			"name": "Bash",
+			"level": "**"
+		}]
+	}];
+
+	$scope.likes = [{
+		"title": "Traveling"
+	},
+	{
+		"title": "Cartography"
+	},
+	{
+		"title": "Photography"
+	}];
+
+	$scope.languages = [{
+		"name": "French",
+		"level": "Native"
+	},
+	{
+		"name": "English",
+		"level": "Bilingual"
+	}];
 }]);
+
+/*
+	{
+		"category": "",
+		"skills": [{
+			"name": "",
+			"level": "***"
+		},
+		{
+			"name": "",
+			"level": "***"
+		}]
+	}
+*/
