@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 
-	$scope.locale = "frFR"; //This is the language. Use these: enUS frFR
+	$scope.locale = "enUS"; //This is the language. Use these: enUS frFR
 
 	$scope.person = {
 		"name": "Martin Verdier", //That's your name!
