@@ -47,6 +47,7 @@ header .row {
 }
 
 .job-tasks {
+	margin-top: 5px;
 	white-space: pre-line;
 }
 
@@ -84,4 +85,8 @@ section {
 
 .category-skills {
 	margin-left: 10px;
+}
+
+.job-techs {
+	margin-top: 5px;
 }
