@@ -13,7 +13,8 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>Résumé - {{ person.name }}</title>
+		<title ng-if="!locale || locale == 'enUS'">Résumé - {{ person.name }}</title>
+		<title ng-if="locale == 'frFR'">CV - {{ person.name }}</title>
 		<link rel="stylesheet" href="css/resume.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
