@@ -24,77 +24,76 @@
 	<body>
 		<header class="container">
 			<div class="row">
-		      	<div class="col-sm-2">
-		        	<img ng-src="{{ person.picture }}" class="profile-picture">
-		      	</div>
-		      	<div class="col-sm-2 center name">
-		        	<p>{{ person.name }}</p>
-		      	</div>
-		      	<div class="col-sm-4 center title">
-		        	<p>{{ person.role }}</p>
-		      	</div>
-		      	<div class="col-sm-4 center contact">
-		        	<p ng-if="person.phone && person.phoneDisplay">
-		        		<a ng-href="tel:{{ person.phone }}"><i class="material-icons">phone</i>&nbsp{{ person.phoneDisplay }}</a>
-		        	</p>
-		        	<p ng-if="person.email">
-		        		<a ng-href="mailto:{{ person.email }}"><i class="material-icons">mail</i>&nbsp{{ person.email }}</a>
-		        	</p>
-		        	<p ng-if="person.github">
-		        		<a ng-href="https://github.com/{{ person.github }}"><img src="resources/GitHub-Mark/PNG/GitHub-Mark-32px.png" class="github-icon">&nbsp{{ person.github }}</a>
-		        	</p>
-		      	</div>
-		    </div>
+				<div class="col-sm-2">
+					<img ng-src="{{ person.picture }}" class="profile-picture">
+				</div>
+				<div class="col-sm-2 center name">
+					<p>{{ person.name }}</p>
+				</div>
+				<div class="col-sm-4 center title">
+					<p>{{ person.role }}</p>
+				</div>
+				<div class="col-sm-4 center contact">
+					<p ng-if="person.phone && person.phoneDisplay">
+						<a ng-href="tel:{{ person.phone }}"><i class="material-icons">phone</i>&nbsp{{ person.phoneDisplay }}</a>
+					</p>
+					<p ng-if="person.email">
+						<a ng-href="mailto:{{ person.email }}"><i class="material-icons">mail</i>&nbsp{{ person.email }}</a>
+					</p>
+					<p ng-if="person.github">
+						<a ng-href="https://github.com/{{ person.github }}"><img src="resources/GitHub-Mark/PNG/GitHub-Mark-32px.png" class="github-icon">&nbsp{{ person.github }}</a>
+					</p>
+				</div>
+			</div>
 		</header>
 
 		<section class="container">
 			<div class="row content">
 				<div class="col-sm-5 work pull-right" ng-if="work">
 
-		      		<h3 ng-if="!locale || locale == 'enUS'">Work Experience</h3>
-		      		<h3 ng-if="locale == 'frFR'">Expérience Professionnelle</h3>
+					<h3 ng-if="!locale || locale == 'enUS'">Work Experience</h3>
+					<h3 ng-if="locale == 'frFR'">Expérience Professionnelle</h3>
 
-		      		<div class="job" ng-repeat="contract in work">
+					<div class="job" ng-repeat="contract in work">
 
-                        <h4 class="job-role">{{ contract.role }}</h4>
+						<h4 class="job-role">{{ contract.role }}</h4>
 
-                        <div class="job-dates">{{ contract.dates }}</div>
-                        <div class="job-company">{{ contract.company }}</div>
+						<div class="job-dates">{{ contract.dates }}</div>
+						<div class="job-company">{{ contract.company }}</div>
 
-                        <div class="job-title">{{ contract.title }}</div>
-                        
-                        <div class="job-location">{{ contract.location }}</div>
-                        <div class="job-tasks">{{ contract.tasks }}</div>
-                        <div class="job-techs">{{ contract.techs }}</div>  
+						<div class="job-title">{{ contract.title }}</div>
 
-                        <div class="job-url">
-                            <a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>
-	                    </div>
+						<div class="job-location">{{ contract.location }}</div>
+						<div class="job-tasks">{{ contract.tasks }}</div>
+						<div class="job-techs">{{ contract.techs }}</div>  
+
+						<div class="job-url">
+							<a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>
+						</div>
 
 					</div>    
 				</div>
 
-		      	<div class="col-sm-5 skills pull-right" ng-if="skills">
+				<div class="col-sm-5 skills pull-right" ng-if="skills">
 
-		      		<h3 ng-if="!locale || locale == 'enUS'">Skills</h3>
-		      		<h3 ng-if="locale == 'frFR'">Compétences</h3>
+					<h3 ng-if="!locale || locale == 'enUS'">Skills</h3>
+					<h3 ng-if="locale == 'frFR'">Compétences</h3>
 
-		      		<div class="skill" ng-repeat="category in skills">
+					<div class="skill" ng-repeat="category in skills">
 
-		      			<h4 class="skill-category">{{ category.category }}</h4>
+						<h4 class="skill-category">{{ category.category }}</h4>
 
-		      			<div class="category-skills" ng-repeat="s in category.skills">
+						<div class="category-skills" ng-repeat="s in category.skills">
 							<div class="skill-name">{{ s.name }}</div>
 							<div class="skill-level">{{ s.level }}</div>
 						</div>
-
-			      	</div>
-		        </div>
+					</div>
+				</div>
 
 				<div class="school col-sm-5 school pull-right" ng-if="school">
 
-		      		<h3 ng-if="!locale || locale == 'enUS'">School Degrees</h3>
-		      		<h3 ng-if="locale == 'frFR'">Diplômes</h3>
+					<h3 ng-if="!locale || locale == 'enUS'">School Degrees</h3>
+					<h3 ng-if="locale == 'frFR'">Diplômes</h3>
 
 					<div class="degree" ng-repeat="degree in school">
 
@@ -102,50 +101,50 @@
 						<div class="school-dates">{{ degree.dates }}</div>
 						<div class="school-location">{{ degree.location }}</div>
 
-			      	</div>
-			     </div>
+					</div>
+				</div>
 
-	        	<div class="personal col-sm-5 misc pull-right" ng-if="likes || languages">
+				<div class="personal col-sm-5 misc pull-right" ng-if="likes || languages">
 
-	        		<div ng-if="languages && likes">
-			      		<h3 ng-if="!locale || locale == 'enUS'">Miscellaneous Information</h3>
-			      		<h3 ng-if="locale == 'frFR'">Diverses Informations</h3>
-			      	</div>
+					<div ng-if="languages && likes">
+						<h3 ng-if="!locale || locale == 'enUS'">Miscellaneous Information</h3>
+						<h3 ng-if="locale == 'frFR'">Diverses Informations</h3>
+					</div>
 
-		      		<div class="likes" ng-if="likes">
+					<div class="likes" ng-if="likes">
 
-		      			<div ng-if="languages">
+						<div ng-if="languages">
 							<h4 ng-if="!locale || locale == 'enUS'">Likes</h4>
-				      		<h4 ng-if="locale == 'frFR'">Intérêts</h4>
-			      		</div>
-			      		<div ng-if="!languages">
+							<h4 ng-if="locale == 'frFR'">Intérêts</h4>
+						</div>
+						<div ng-if="!languages">
 							<h3 ng-if="!locale || locale == 'enUS'">Likes</h3>
-				      		<h3 ng-if="locale == 'frFR'">Intérêts</h3>
-			      		</div>
+							<h3 ng-if="locale == 'frFR'">Intérêts</h3>
+						</div>
 
 						<div class="like" ng-repeat="like in likes">
-			      			<p>{{ like.title }}</p>
-			      		</div>
-		      		</div>
+							<p>{{ like.title }}</p>
+						</div>
+					</div>
+				</div>
 
 		      		<div class="languages" ng-if="languages">
 
 		      			<div ng-if="likes">
-							<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
-				      		<h4 ng-if="locale == 'frFR'">Langues</h4>
+						<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
+						<h4 ng-if="locale == 'frFR'">Langues</h4>
 			      		</div>
 			      		<div ng-if="!likes">
-							<h3 ng-if="!locale || locale == 'enUS'">Languages</h3>
-				      		<h3 ng-if="locale == 'frFR'">Langues</h3>
+						<h3 ng-if="!locale || locale == 'enUS'">Languages</h3>
+						<h3 ng-if="locale == 'frFR'">Langues</h3>
 			      		</div>
 
 			      		<div class="language" ng-repeat="language in languages">
 			      			<p>{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</p>
 			      		</div>
 
-			      	</div>
-		      	</div>
-		    </div>
+				</div>
+			</div>
 		</section>
 
 		<footer>
@@ -165,10 +164,10 @@
 		</footer>
 
 		<!-- Modules -->
-	    <script src="js/app.js"></script>
+		<script src="js/app.js"></script>
 
-	    <!-- Controllers -->
-	    <script src="js/controllers/MainController.js"></script>
+		<!-- Controllers -->
+		<script src="js/controllers/MainController.js"></script>
 	
 	</body>
 </html>
