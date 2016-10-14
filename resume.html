@@ -127,9 +127,8 @@
 							<p>{{ like.title }}</p>
 						</div>
 					</div>
-				</div>
 
-		      		<div class="languages" ng-if="languages">
+					<div class="languages" ng-if="languages">
 
 		      			<div ng-if="likes">
 						<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
@@ -143,6 +142,7 @@
 			      		<div class="language" ng-repeat="language in languages">
 			      			<p>{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</p>
 			      		</div>
+					</div>
 
 				</div>
 			</div>
