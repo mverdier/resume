@@ -1,16 +1,23 @@
 body {
 	font-family: 'Roboto' !important;
+	background-color: #789FA9 !important;
 }
 
 .profile-picture {
 	border-radius: 50%;
 	max-width: 100%;
 	max-height: 100%;
+	border: 3px solid #33556B;
 }
 
 header {
 	padding-top: 50px;
 	font-size: 25px;
+	color: #1B344C;
+}
+
+header a {
+	color: #33556B;
 }
 
 .title {
@@ -50,14 +57,31 @@ header .row {
 	margin-top: 10px;
 }
 
+@media (max-width: 1081px) {
+	.content>div {
+		min-height: 0;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #1B344C;
+		background-color: #A6C4C8;
+		border-radius: 5px;
+		width: 90%;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 10px;
+	}
+}
+
 .content>div {
 	min-height: 0;
 	display: flex;
 	flex-direction: column;
-	border: 1px solid #A6C4C8;
-	background-color: #DBE7E7;
-	margin: 5px;
+	border: 1px solid #1B344C;
+	background-color: #A6C4C8;
 	border-radius: 5px;
+	width: 49%;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 footer {
