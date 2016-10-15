@@ -46,9 +46,8 @@ header .row {
 	width: 16px;
 }
 
-.job-tasks {
-	margin-top: 15px;
-	white-space: pre-line;
+.job-tasks-title {
+	margin-top: 10px;
 }
 
 .content>div {
@@ -75,6 +74,8 @@ section {
 }
 
 .job-role {
+	font-size: 23px;
+	margin-top: 20px;
 	margin-bottom: 0;
 }
 
@@ -87,6 +88,6 @@ section {
 	margin-left: 10px;
 }
 
-.job-techs {
+.job-techs-title {
 	margin-top: 15px;
 }

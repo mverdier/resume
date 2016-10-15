@@ -65,8 +65,16 @@
 						<div class="job-title">{{ contract.title }}</div>
 
 						<div class="job-location">{{ contract.location }}</div>
-						<div class="job-tasks">{{ contract.tasks }}</div>
-						<div class="job-techs">{{ contract.techs }}</div>  
+						
+						<h4 class="job-tasks-title" ng-if="!locale || locale == 'enUS'">Tasks</h4>
+						<h4 class="job-tasks-title" ng-if="locale == 'frFR'">Tâches</h4>
+						<ul class="job-tasks">
+							<li ng-repeat="task in contract.tasks">{{ task.content }}</li>
+						</ul>
+
+						<h4 class="job-techs-title" ng-if="contract.techs && (!locale || locale == 'enUS')">Used Technologies</h4>
+						<h4 class="job-techs-title" ng-if="contract.techs && locale == 'frFR'">Technologies utilisées</h4>
+						<div ng-if="contract.techs" class="job-techs">{{ contract.techs }}</div>  
 
 						<div class="job-url">
 							<a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>

@@ -56,8 +56,13 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"techs": "Which techs you used. This is a bit developer-specific and might not apply to you, don't bother putting it if you don't feel like it helps. Otherwise, for example PHP, HTML5, CSS3",
 		"url": "The website of the company you worked in, or of the project you worked on. http://microsoft.com/",
 		"displayUrl": "A nice, clean version of the website URL, easily readable by humans, like microsoft.com",
-		"tasks": "This is the long part. Basically put in the different tasks you did during the contract. You can use \n to put a blank line. I'll make this work with html code later on"
-	*/
+		"tasks": [{
+			"content": "Content of the task you worked on"
+		},
+		{
+			"content": "Content of another task"
+		}]
+	}	*/
 	$scope.work = [{
 		"contract": "Ten-week internship",
 		"dates": "2014",
@@ -67,7 +72,21 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"techs": "HTML5, CSS3, JS, PHP, SQL, Android",
 		"url": "http://qeepr.com/",
 		"displayUrl": "www.qeepr.com",
-		"tasks": "Entirely remade signup, login, and genealogy tree pages\nAdded picture uploading feature to the signup page\nAdded a QR code selling feature in the website\nUpdated and developed several features\nDeveloped an Android application using geolocation, QR code scanning, and website data access features"
+		"tasks": [{
+			"content": "Entirely remade signup, login, and genealogy tree pages"
+		},
+		{
+			"content": "Added picture uploading feature to the signup page"
+		},
+		{
+			"content": "Added a QR code selling feature in the website"
+		},
+		{
+			"content": "Updated and developed several features"
+		},
+		{
+			"content": "Developed an Android application using geolocation, QR code scanning, and website data access features"
+		}]
 	},
 	{
 		"contract": "One-year Apprenticeship",
@@ -78,7 +97,25 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"techs": "Java, MongoDB, AngularJS, HTML5, CSS3",
 		"url": "http://www.telegrafik.eu/",
 		"displayUrl": "www.telegrafik.eu",
-		"tasks": "Updated software features\nDeveloped an artificial intelligence and machine learning engine\nMaintained and adapted pre-existing features\nUpdated the dynamic web dashboards\nUpdated the MongoDB database\nWorked with a Python developer for intelligence metrics"
+		"tasks": [{
+			"content": "Updated software features"
+		},
+		{
+			"content": "Developed an artificial intelligence and machine learning engine"
+		},
+		{
+			"content": "Maintained and adapted pre-existing features"
+		},
+		{
+			"content": "Updated the dynamic web dashboards"
+		},
+		{
+			"content": "Updated the MongoDB database"
+		},
+		{
+			"content": "Worked with a Python developer for intelligence metrics"
+		}]
+	
 	},
 	{
 		"contract": "Permanent contract",
@@ -89,7 +126,18 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"techs": "Java, MongoDB, AngularJS, HTML5, CSS3, Python",
 		"url": "http://www.telegrafik.eu/",
 		"displayUrl": "www.telegrafik.eu",
-		"tasks": "Following the tasks done during the apprenticeship contract\nWork distribution to other developers\nSupervision and validation of other developers' work\nManaging software deployment process, branch merging, production pushes"
+		"tasks": [{
+			"content": "Following the tasks done during the apprenticeship contract"
+		},
+		{
+			"content": "Work distribution to other developers"
+		},
+		{
+			"content": "Supervision and validation of other developers' work"
+		},
+		{
+			"content": "Managing software deployment process, branch merging, production pushes"
+		}]
 	}]
 
 	/*
