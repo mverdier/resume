@@ -20,6 +20,11 @@ header a {
 	color: #33556B;
 }
 
+footer a {
+	color: #33556B;
+	text-decoration: underline;
+}
+
 .title {
 	font-size: 20px;
 	text-align: right;
