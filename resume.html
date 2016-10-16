@@ -121,36 +121,40 @@
 						<h3 ng-if="locale == 'frFR'">Diverses Informations</h3>
 					</div>
 
-					<div class="likes" ng-if="likes">
-
-						<div ng-if="languages">
-							<h4 ng-if="!locale || locale == 'enUS'">Likes</h4>
-							<h4 ng-if="locale == 'frFR'">Intérêts</h4>
-						</div>
-						<div ng-if="!languages">
-							<h3 ng-if="!locale || locale == 'enUS'">Likes</h3>
-							<h3 ng-if="locale == 'frFR'">Intérêts</h3>
-						</div>
-
-						<div class="like" ng-repeat="like in likes">
-							<p>{{ like.title }}</p>
-						</div>
+					<div ng-if="!languages && likes">
+						<h3 ng-if="!locale || locale == 'enUS'">Likes</h3>
+						<h3 ng-if="locale == 'frFR'">Intérêts</h3>
 					</div>
 
-					<div class="languages" ng-if="languages">
+					<div ng-if="!likes && languages">
+						<h3 ng-if="!locale || locale == 'enUS'">Languages</h3>
+						<h3 ng-if="locale == 'frFR'">Langues</h3>
+		      		</div>
 
-		      			<div ng-if="likes">
-							<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
-							<h4 ng-if="locale == 'frFR'">Langues</h4>
-			      		</div>
-			      		<div ng-if="!likes">
-							<h3 ng-if="!locale || locale == 'enUS'">Languages</h3>
-							<h3 ng-if="locale == 'frFR'">Langues</h3>
-			      		</div>
+		      		<div class="row">
+						<div class="likes col-sm-6" ng-if="likes">
 
-			      		<div class="language" ng-repeat="language in languages">
-			      			<p>{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</p>
-			      		</div>
+							<div ng-if="languages">
+								<h4 ng-if="!locale || locale == 'enUS'">Likes</h4>
+								<h4 ng-if="locale == 'frFR'">Intérêts</h4>
+							</div>
+
+							<div class="like" ng-repeat="like in likes">
+								<p>{{ like.title }}</p>
+							</div>
+						</div>
+
+						<div class="languages col-sm-6" ng-if="languages">
+
+			      			<div ng-if="likes">
+								<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
+								<h4 ng-if="locale == 'frFR'">Langues</h4>
+				      		</div>
+
+				      		<div class="language" ng-repeat="language in languages">
+				      			<p>{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</p>
+				      		</div>
+						</div>
 					</div>
 
 				</div>
