@@ -90,6 +90,8 @@ header .row {
 
 .content h3 {
 	text-align: center;
+	font-weight: bold;
+	font-size: 26px;
 }
 
 .school h3, .misc h3 {
@@ -135,4 +137,8 @@ section {
 
 .misc {
 	padding-bottom: 15px;
+}
+
+.school h3, .misc h3 {
+	margin-bottom: 20px;
 }
