@@ -32,7 +32,7 @@
 					<p>{{ person.name }}</p>
 				</div>
 				<div class="col s4 center title">
-					<p>{{ person.role }}</p>
+					<h4>{{ person.role }}</h4>
 				</div>
 				<div class="col s4 center contact">
 					<p ng-if="person.phone && person.phoneDisplay">
@@ -50,71 +50,78 @@
 
 		<section class="container">
 			<div class="row content">
-				<div class="col s5 work push-s6 m12" ng-if="work">
+				<div class="col l6 work push-l6 s12" ng-if="work">
 
 					<h3 ng-if="!locale || locale == 'enUS'">Work Experience</h3>
 					<h3 ng-if="locale == 'frFR'">Expérience Professionnelle</h3>
 
-					<div class="job" ng-repeat="contract in work">
+					<div class="job card hoverable" ng-repeat="contract in work">
+						<div class="card-content">
 
-						<h4 class="job-role">{{ contract.role }}</h4>
+							<h4 class="job-role">{{ contract.role }}</h4>
 
-						<div class="job-dates">{{ contract.dates }}</div>
-						<div class="job-company">{{ contract.company }}</div>
+							<div class="job-dates">{{ contract.dates }}</div>
+							<div class="job-company">{{ contract.company }}</div>
 
-						<div class="job-title">{{ contract.title }}</div>
+							<div class="job-title">{{ contract.title }}</div>
 
-						<div class="job-location">{{ contract.location }}</div>
-						
-						<h4 class="job-tasks-title" ng-if="!locale || locale == 'enUS'">Tasks</h4>
-						<h4 class="job-tasks-title" ng-if="locale == 'frFR'">Tâches</h4>
-						<ul class="job-tasks">
-							<li ng-repeat="task in contract.tasks">{{ task.content }}</li>
-						</ul>
+							<div class="job-location">{{ contract.location }}</div>
+							
+							<h5 class="job-tasks-title" ng-if="!locale || locale == 'enUS'">Tasks</h5>
+							<h5 class="job-tasks-title" ng-if="locale == 'frFR'">Tâches</h5>
+							<ul class="job-tasks">
+								<li ng-repeat="task in contract.tasks">{{ task.content }}</li>
+							</ul>
 
-						<h4 class="job-techs-title" ng-if="contract.techs && (!locale || locale == 'enUS')">Used Technologies</h4>
-						<h4 class="job-techs-title" ng-if="contract.techs && locale == 'frFR'">Technologies utilisées</h4>
-						<div ng-if="contract.techs" class="job-techs">{{ contract.techs }}</div>  
+							<h4 class="job-techs-title" ng-if="contract.techs && (!locale || locale == 'enUS')">Used Technologies</h4>
+							<h4 class="job-techs-title" ng-if="contract.techs && locale == 'frFR'">Technologies utilisées</h4>
+							<div ng-if="contract.techs" class="job-techs">{{ contract.techs }}</div>  
 
-						<div class="job-url">
-							<a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>
+							<div class="job-url">
+								<a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>
+							</div>
 						</div>
-
 					</div>    
 				</div>
 
-				<div class="col s5 skills pull-s5 m12" ng-if="skills">
+				<div class="col l6 skills pull-l6 s12" ng-if="skills">
 
 					<h3 ng-if="!locale || locale == 'enUS'">Skills</h3>
 					<h3 ng-if="locale == 'frFR'">Compétences</h3>
 
-					<div class="skill" ng-repeat="category in skills">
+					<div class="skill card hoverable" ng-repeat="category in skills">
 
-						<h4 class="skill-category">{{ category.category }}</h4>
+						<div class="card-content">
 
-						<div class="row category-skills" ng-repeat="s in category.skills">
-							<div class="col s3 skill-name">{{ s.name }}</div>
-							<div class="col s4 skill-level">{{ s.level }}</div>
-							<div class="col s4"></div>
+							<h4 class="skill-category">{{ category.category }}</h4>
+
+							<div class="row category-skills" ng-repeat="s in category.skills">
+								<div class="col s3 skill-name">{{ s.name }}</div>
+								<div class="col s4 skill-level">{{ s.level }}</div>
+								<div class="col s4"></div>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="school col s5 school pull-s5 m12" ng-if="school">
+				<div class="school col l6 school pull-l6 s12" ng-if="school">
 
 					<h3 ng-if="!locale || locale == 'enUS'">School Degrees</h3>
 					<h3 ng-if="locale == 'frFR'">Diplômes</h3>
 
-					<div class="degree" ng-repeat="degree in school">
+					<div class="degree card hoverable" ng-repeat="degree in school">
 
-						<div class="school-title">{{ degree.title }}</div>
-						<div class="school-dates">{{ degree.dates }}</div>
-						<div class="school-location">{{ degree.location }}</div>
+						<div class="card-content">
 
+							<div class="school-title">{{ degree.title }}</div>
+							<div class="school-dates">{{ degree.dates }}</div>
+							<div class="school-location">{{ degree.location }}</div>
+
+						</div>
 					</div>
 				</div>
 
-				<div class="personal col s5 misc pull-s5 m12" ng-if="likes || languages">
+				<div class="personal col l6 misc s12" ng-if="likes || languages">
 
 					<div ng-if="languages && likes">
 						<h3 ng-if="!locale || locale == 'enUS'">Miscellaneous Information</h3>
@@ -131,8 +138,8 @@
 						<h3 ng-if="locale == 'frFR'">Langues</h3>
 		      		</div>
 
-		      		<div class="row">
-						<div class="likes col s6" ng-if="likes">
+					<div class="likes card hoverable" ng-if="likes">
+						<div class="card-content">
 
 							<div ng-if="languages">
 								<h4 ng-if="!locale || locale == 'enUS'">Likes</h4>
@@ -143,9 +150,10 @@
 								<p>{{ like.title }}</p>
 							</div>
 						</div>
+					</div>
 
-						<div class="languages col s6" ng-if="languages">
-
+					<div class="languages card hoverable" ng-if="languages">
+						<div class="card-content">
 			      			<div ng-if="likes">
 								<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
 								<h4 ng-if="locale == 'frFR'">Langues</h4>
@@ -156,7 +164,6 @@
 				      		</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
