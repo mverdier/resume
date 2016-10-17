@@ -59,7 +59,10 @@ header .row {
 
 footer {
 	margin-top: 40px;
-	font-size: 12px;
+}
+
+footer>.container {
+	font-size: 13px;
 }
 
 section {
@@ -97,4 +100,8 @@ section {
 
 .job-url {
 	margin-top: 10px;
+}
+
+.page-footer a {
+	color: #0d47a1;
 }
