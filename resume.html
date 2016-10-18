@@ -100,15 +100,19 @@
 								<div ng-if="category.more" class="col s6">
 									<h5 ng-if="!locale || locale == 'enUS'">Good at</h5>
 									<h5 ng-if="locale == 'frFR'">Bon avec</h5>
-						
-									<p ng-repeat="s in category.more">{{ s.name }}</p>
+									
+									<ul>
+										<li ng-repeat="s in category.more">{{ s.name }}</li>
+									</ul>
 								</div>
 
 								<div ng-if="category.less" class="col s6">
 									<h5 ng-if="!locale || locale == 'enUS'">Know of</h5>
 									<h5 ng-if="locale == 'frFR'">Connus</h5>
-						
-									<p ng-repeat="s in category.less">{{ s.name }}</p>
+									
+									<ul>
+										<li ng-repeat="s in category.less">{{ s.name }}</li>
+									</ul>
 								</div>
 							</div>
 						</div>
