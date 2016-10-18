@@ -23,27 +23,27 @@
 	</head>
 
 	<body>
-		<header class="container">
-			<div class="row">
-				<div class="col s2">
-					<img ng-src="{{ person.picture }}" class="profile-picture">
-				</div>
-				<div class="col s2 center name">
-					<p>{{ person.name }}</p>
-				</div>
-				<div class="col s4 center title">
-					<h4>{{ person.role }}</h4>
-				</div>
-				<div class="col s4 center contact">
-					<p ng-if="person.phone && person.phoneDisplay">
-						<a ng-href="tel:{{ person.phone }}"><i class="material-icons">phone</i>&nbsp{{ person.phoneDisplay }}</a>
-					</p>
-					<p ng-if="person.email">
-						<a ng-href="mailto:{{ person.email }}"><i class="material-icons">mail</i>&nbsp{{ person.email }}</a>
-					</p>
-					<p ng-if="person.github">
-						<a ng-href="https://github.com/{{ person.github }}"><img src="resources/GitHub-Mark/PNG/GitHub-Mark-32px.png" class="github-icon">&nbsp{{ person.github }}</a>
-					</p>
+		<header class="green darken-1">
+			<div class="container grey-text text-lighten-4">
+				<div class="row">
+					<div class="col s2">
+						<img ng-src="{{ person.picture }}" class="profile-picture">
+					</div>
+					<div class="col s6">
+						<h4 class="name">{{ person.name }}</h4>
+						<h4 class="role">{{ person.role }}</h4>
+					</div>
+					<div class="col s4 right-align contact">
+						<p ng-if="person.phone && person.phoneDisplay">
+							<a ng-href="tel:{{ person.phone }}"><i class="material-icons">phone</i>&nbsp{{ person.phoneDisplay }}</a>
+						</p>
+						<p ng-if="person.email">
+							<a ng-href="mailto:{{ person.email }}"><i class="material-icons">mail</i>&nbsp{{ person.email }}</a>
+						</p>
+						<p ng-if="person.github">
+							<a ng-href="https://github.com/{{ person.github }}"><img src="resources/GitHub-Mark/PNG/GitHub-Mark-32px.png" class="github-icon">&nbsp{{ person.github }}</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -179,7 +179,7 @@
 			</div>
 		</section>
 
-		<footer class="page-footer light-blue darken-1">
+		<footer class="page-footer green darken-1">
 			<div class="container grey-text text-lighten-4">
 				<div class="row" ng-if="!locale || locale == 'enUS'">
 					<p>Résumé designed and developed by <a href="http://martin-verdier.com/">Martin Verdier</a> around October 2016.  I'm not the best with front-end but I try!</p>
