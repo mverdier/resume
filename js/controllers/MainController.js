@@ -147,13 +147,14 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	
 	{
 		"category": "The category of skills, such as Web Development",
-		"skills": [{ 
-			"name": "A skill name, like PHP",
-			"level": "The skill level. This is currently rated in stars (out of 3) but will probably change. Like ***"
+		"more": [{ 
+			"name": "A skill you're good at, like PHP"
 		},
 		{
-			"name": "Another skill, like HTML5",
-			"level": "This skill's level, like **"
+			"name": "Another skill you're good at, like HTML5"
+		}],
+		"less": [{
+			"name": "A skill you know but you haven't yet practiced enough"
 		}]
 	}
 	
@@ -162,66 +163,64 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	*/
 	$scope.skills = [{
 		"category": "Object-Oriented Programming",
-		"skills": [{
-			"name": "Java",
-			"level": "***"
+		"more": [{
+			"name": "Java"
 		},
 		{
-			"name": "PHP",
-			"level": "**"
+			"name": "PHP"
 		},
 		{
-			"name": "C++",
-			"level": "**"
+			"name": "C#"
+		},
+		],
+		"less": [{
+			"name": "C++"
 		},
 		{
-			"name": "C#",
-			"level": "**"
-		},
-		{
-			"name": "Ruby",
-			"level": "*"
+			"name": "Ruby"
 		}]
+		
 	},
 	{
 		"category": "Web Development",
-		"skills": [{
-			"name": "HTML5",
-			"level": "**"
+		"more": [{
+			"name": "HTML5"
 		},
 		{
-			"name": "CSS3",
-			"level": "**"
+			"name": "CSS3"
 		},
 		{
-			"name": "JavaScript",
-			"level": "***"
+			"name": "JavaScript"
+		}],
+		"less": [{
+			"name": "AngularJS"
 		},
 		{
-			"name": "AngularJS",
-			"level": "**"
+			"name": "Node.JS"
+		},
+		{
+			"name": "Ruby on Rails"
 		}]
 	},
 	{
 		"category": "Databases",
-			"skills": [{
-			"name": "MongoDB",
-			"level": "***"
+		"more": [{
+			"name": "MongoDB"
 		},
 		{
-			"name": "SQL",
-			"level": "**"
+			"name": "SQL"
+		}],
+		"less": [{
+			"name": "MariaDB"
 		}]
 	},
 	{
 		"category": "Systems",
-		"skills": [{
-			"name": "Linux",
-			"level": "**"
-		},
-		{
-			"name": "Bash",
-			"level": "**"
+		"less": [{
+			"name": "Linux"
+		}],
+		"more": [{
+			"name": "Bash"
 		}]
 	}];
 

@@ -95,10 +95,21 @@
 
 							<h4 class="skill-category">{{ category.category }}</h4>
 
-							<div class="row category-skills" ng-repeat="s in category.skills">
-								<div class="col s3 skill-name">{{ s.name }}</div>
-								<div class="col s4 skill-level">{{ s.level }}</div>
-								<div class="col s4"></div>
+							<div class="row">
+
+								<div ng-if="category.more" class="col s6">
+									<h5 ng-if="!locale || locale == 'enUS'">Good at</h5>
+									<h5 ng-if="locale == 'frFR'">Bon avec</h5>
+						
+									<p ng-repeat="s in category.more">{{ s.name }}</p>
+								</div>
+
+								<div ng-if="category.less" class="col s6">
+									<h5 ng-if="!locale || locale == 'enUS'">Know of</h5>
+									<h5 ng-if="locale == 'frFR'">Connus</h5>
+						
+									<p ng-repeat="s in category.less">{{ s.name }}</p>
+								</div>
 							</div>
 						</div>
 					</div>
