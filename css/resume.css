@@ -105,5 +105,9 @@ section {
 }
 
 .page-footer a, header a {
-	color: #0d47a1;
+	color: #d4e157;
+}
+
+header i {
+	color: black;
 }
