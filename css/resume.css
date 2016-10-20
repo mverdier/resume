@@ -50,7 +50,7 @@ header .row {
 }
 
 .content h5 {
-	font-size: 23px;
+	font-size: 1.54rem;
 	margin-top: 15px;
 	margin-bottom: 7px;
 }
@@ -117,5 +117,5 @@ header i {
 }
 
 .like, .language, .skill {
-	font-size: 1em;
+	margin-bottom: 3px;
 }
