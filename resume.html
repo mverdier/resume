@@ -97,7 +97,7 @@
 
 							<div class="row">
 
-								<div ng-if="category.more" class="col s6">
+								<div class="skill" ng-if="category.more" class="col s6">
 									<h5 ng-if="!locale || locale == 'enUS'">Good at</h5>
 									<h5 ng-if="locale == 'frFR'">Bon avec</h5>
 									
@@ -108,7 +108,7 @@
 									<h5 ng-if="!locale || locale == 'enUS'">Know of</h5>
 									<h5 ng-if="locale == 'frFR'">Connus</h5>
 									
-									<div ng-repeat="s in category.less">{{ s.name }}</div>
+									<div class="skill" ng-repeat="s in category.less">{{ s.name }}</div>
 								</div>
 							</div>
 						</div>

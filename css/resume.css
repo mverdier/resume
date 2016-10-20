@@ -68,7 +68,7 @@ footer>.container {
 }
 
 .footer-copyright {
-	font-size: 15px;
+	font-size: 1em;
 }
 
 section {
@@ -114,4 +114,8 @@ section {
 
 header i {
 	color: black;
+}
+
+.like, .language, .skill {
+	font-size: 1em;
 }
