@@ -27,14 +27,14 @@
 		<header class="green darken-1">
 			<div class="container grey-text text-lighten-4">
 				<div class="row">
-					<div class="col s2">
+					<div class="col l2 s12 center">
 						<img ng-src="{{ person.picture }}" class="profile-picture">
 					</div>
-					<div class="col s6">
+					<div class="col l6 s12">
 						<h4 class="name">{{ person.name }}</h4>
 						<h4 class="role">{{ person.role }}</h4>
 					</div>
-					<div class="col s4 right-align contact">
+					<div class="col l4 s12 right-align contact">
 						<p ng-if="person.phone && person.phoneDisplay">
 							<a ng-href="tel:{{ person.phone }}"><i class="material-icons">phone</i>&nbsp{{ person.phoneDisplay }}</a>
 						</p>
