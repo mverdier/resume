@@ -101,18 +101,14 @@
 									<h5 ng-if="!locale || locale == 'enUS'">Good at</h5>
 									<h5 ng-if="locale == 'frFR'">Bon avec</h5>
 									
-									<ul>
-										<li ng-repeat="s in category.more">{{ s.name }}</li>
-									</ul>
+									<div ng-repeat="s in category.more">{{ s.name }}</div>
 								</div>
 
 								<div ng-if="category.less" class="col s6">
 									<h5 ng-if="!locale || locale == 'enUS'">Know of</h5>
 									<h5 ng-if="locale == 'frFR'">Connus</h5>
 									
-									<ul>
-										<li ng-repeat="s in category.less">{{ s.name }}</li>
-									</ul>
+									<div ng-repeat="s in category.less">{{ s.name }}</div>
 								</div>
 							</div>
 						</div>
@@ -161,9 +157,7 @@
 								<h4 ng-if="locale == 'frFR'">Intérêts</h4>
 							</div>
 
-							<div class="like" ng-repeat="like in likes">
-								<p>{{ like.title }}</p>
-							</div>
+							<div class="like" ng-repeat="like in likes">{{ like.title }}</div>
 						</div>
 					</div>
 
@@ -174,9 +168,7 @@
 								<h4 ng-if="locale == 'frFR'">Langues</h4>
 				      		</div>
 
-				      		<div class="language" ng-repeat="language in languages">
-				      			<p>{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</p>
-				      		</div>
+				      		<div class="language" ng-repeat="language in languages">{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</div>
 						</div>
 					</div>
 				</div>
