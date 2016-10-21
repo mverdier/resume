@@ -24,6 +24,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"location": "Which establishment gave it to you, for example Massachusetts Institute of Technology, Boston, MA"
 	}
 	
+	I strongly recommend putting them in anti-chronological order (more recent first, older last).
 	That's it. You can fill those and put as many as you like.
 	*/
 	$scope.school = [{
@@ -62,7 +63,10 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		{
 			"content": "Content of another task"
 		}]
-	}	*/
+	}
+	
+	I strongly recommend putting them in anti-chronological order (more recent first, older last).
+	*/
 	$scope.work = [{
 		"type": "Permanent contract",
 		"dates": "2015 - Current",
