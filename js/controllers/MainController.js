@@ -80,7 +80,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		},
 		{
 			"content": "Tons of bug fixing and software optimization"
-		}
+		},
 		{
 			"content": "Work distribution to other developers"
 		},
