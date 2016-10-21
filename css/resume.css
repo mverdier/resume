@@ -34,13 +34,13 @@ header .row {
 }
 
 .center {
-    margin: auto;
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    margin: auto;
-    position: relative;
-    font-family: 'Roboto';
+	margin: auto;
+	width: 50%;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+	position: relative;
+	font-family: 'Roboto';
 }
 
 .github-icon {
