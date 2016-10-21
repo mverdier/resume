@@ -27,9 +27,9 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	That's it. You can fill those and put as many as you like.
 	*/
 	$scope.school = [{
-		"title": "Baccalauréat Scientifique (Engineer Science Option), mention AB",
+		"title": "APSIO Professional Bachelor",
 		"dates": "2012-2014",
-		"location": "Antoine Bourdelle High School, Montauban, France"
+		"location": "Blagnac IUT, France"
 	},
 	{
 		"title": "DUT in Computer Science (2-year diploma)",
@@ -37,9 +37,9 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"location": "Rodez IUT, France"
 	},
 	{
-		"title": "APSIO Professional Bachelor",
+		"title": "Baccalauréat Scientifique (Engineer Science Option), mention AB",
 		"dates": "2012-2014",
-		"location": "Blagnac IUT, France"
+		"location": "Antoine Bourdelle High School, Montauban, France"
 	}]
 
 	/*
@@ -64,28 +64,34 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		}]
 	}	*/
 	$scope.work = [{
-		"contract": "Ten-week internship",
-		"dates": "2014",
-		"role": "Full-stack web and Android developer",
-		"company": "Visual-2000",
-		"location": "Montréal, Canada",
-		"techs": "HTML5, CSS3, JS, PHP, SQL, Android",
-		"url": "http://qeepr.com/",
-		"displayUrl": "www.qeepr.com",
+		"contract": "Permanent contract",
+		"dates": "2015 - Current",
+		"role": "Lead Java developer",
+		"company": "Telegrafik",
+		"location": "Toulouse, France",
+		"techs": "Java, MongoDB, AngularJS, HTML5, CSS3, Python",
+		"url": "http://www.telegrafik.eu/",
+		"displayUrl": "www.telegrafik.eu",
 		"tasks": [{
-			"content": "Entirely remade signup, login, and genealogy tree pages"
+			"content": "Improving the software by developing new features"
 		},
 		{
-			"content": "Added picture uploading feature to the signup page"
+			"content": "Created a rule engine allowing helpers to set personal alarms according to their close one's behavior"
 		},
 		{
-			"content": "Added a QR code selling feature in the website"
+			"content": "Tons of bug fixing and software optimization"
+		}
+		{
+			"content": "Work distribution to other developers"
 		},
 		{
-			"content": "Updated and developed several features"
+			"content": "Supervision and validation of other developers' work"
 		},
 		{
-			"content": "Developed an Android application using geolocation, QR code scanning, and website data access features"
+			"content": "Managing software deployment process, branch merging, production pushes"
+		},
+		{
+			"content": "Managing the evolutions and optimizations of the database"
 		}]
 	},
 	{
@@ -118,25 +124,28 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	
 	},
 	{
-		"contract": "Permanent contract",
-		"dates": "2015 - Current",
-		"role": "Lead Java developer",
-		"company": "Telegrafik",
-		"location": "Toulouse, France",
-		"techs": "Java, MongoDB, AngularJS, HTML5, CSS3, Python",
-		"url": "http://www.telegrafik.eu/",
-		"displayUrl": "www.telegrafik.eu",
+		"contract": "Ten-week internship",
+		"dates": "2014",
+		"role": "Full-stack web and Android developer",
+		"company": "Visual-2000",
+		"location": "Montréal, Canada",
+		"techs": "HTML5, CSS3, JS, PHP, SQL, Android",
+		"url": "http://qeepr.com/",
+		"displayUrl": "www.qeepr.com",
 		"tasks": [{
-			"content": "Following the tasks done during the apprenticeship contract"
+			"content": "Entirely remade signup, login, and genealogy tree pages"
 		},
 		{
-			"content": "Work distribution to other developers"
+			"content": "Added picture uploading feature to the signup page"
 		},
 		{
-			"content": "Supervision and validation of other developers' work"
+			"content": "Added a QR code selling feature in the website"
 		},
 		{
-			"content": "Managing software deployment process, branch merging, production pushes"
+			"content": "Updated and developed several features"
+		},
+		{
+			"content": "Developed an Android application using geolocation, QR code scanning, and website data access features"
 		}]
 	}]
 
