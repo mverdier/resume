@@ -48,7 +48,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	Each of them will have information available as such:
 	
 	{
-		"contract": "Type of contract, like an Internship",
+		"type": "Type of contract, like an Internship",
 		"dates": "Same as for school, the dates between which you've worked under this contract, like 2012-2013",
 		"role": "Your role in the company during this contract, Web Developer for example",
 		"company": "The company you worked in, might be Microsoft",
@@ -64,7 +64,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		}]
 	}	*/
 	$scope.work = [{
-		"contract": "Permanent contract",
+		"type": "Permanent contract",
 		"dates": "2015 - Current",
 		"role": "Lead Java developer",
 		"company": "Telegrafik",
@@ -95,7 +95,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		}]
 	},
 	{
-		"contract": "One-year Apprenticeship",
+		"type": "One-year Apprenticeship",
 		"dates": "2014 - 2015",
 		"role": "Software developer",
 		"company": "Telegrafik",
@@ -124,7 +124,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	
 	},
 	{
-		"contract": "Ten-week internship",
+		"type": "Ten-week internship",
 		"dates": "2014",
 		"role": "Full-stack web and Android developer",
 		"company": "Visual-2000",
