@@ -83,7 +83,7 @@
 								<a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>
 							</div>
 						</div>
-					</div>    
+					</div>
 				</div>
 
 				<div class="col l6 skills pull-l6 s12" ng-if="skills">
@@ -149,7 +149,7 @@
 					<div ng-if="!likes && languages">
 						<h3 ng-if="!locale || locale == 'enUS'">Languages</h3>
 						<h3 ng-if="locale == 'frFR'">Langues</h3>
-		      		</div>
+				</div>
 
 					<div class="likes card hoverable" ng-if="likes">
 						<div class="card-content">
@@ -165,12 +165,12 @@
 
 					<div class="languages card hoverable" ng-if="languages">
 						<div class="card-content">
-			      			<div ng-if="likes">
+						<div ng-if="likes">
 								<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
 								<h4 ng-if="locale == 'frFR'">Langues</h4>
-				      		</div>
+						</div>
 
-				      		<div class="language" ng-repeat="language in languages">{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</div>
+						<div class="language" ng-repeat="language in languages">{{ language.name }}<span ng-if="locale == 'frFR'"> </span>: {{ language.level }}</div>
 						</div>
 					</div>
 				</div>
@@ -192,11 +192,11 @@
 				</div>
 			</div>
 			<div class="footer-copyright">
-	            <div class="container">
-	            © 2016 Martin Verdier
-	            <a class="grey-text text-lighten-4 right" href="http://martin-verdier.com/LICENSE">MIT License</a>
-            </div>
-          </div>
+				<div class="container">
+					© 2016 Martin Verdier
+					<a class="grey-text text-lighten-4 right" href="http://martin-verdier.com/LICENSE">MIT License</a>
+				</div>
+			</div>
 		</footer>
 
 
