@@ -276,6 +276,6 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	},
 	{
 		"name": "English",
-		"level": "Bilingual"
+		"level": "Full Professional Fluency (975/990 TOEIC)"
 	}];
 }]);
