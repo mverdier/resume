@@ -173,6 +173,9 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	}
 	
 	You can put in as many categories as you like, with as many skills as you like.
+	Neither more or less are mandatory. You can have both, or only one, the webpage will adapt consequently.
+	You should still put at least one "more" or one "less". You don't /have to/ but otherwise you'll have
+	an empty card with just a title. But if that's your kind of stuff, go for it, who am I to stop you.
 	Be crative, that's the important stuff!
 	*/
 	$scope.skills = [{
@@ -223,9 +226,6 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		},
 		{
 			"name": "SQL"
-		}],
-		"less": [{
-			"name": "MariaDB"
 		}]
 	},
 	{
