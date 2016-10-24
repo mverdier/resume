@@ -10,8 +10,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"phoneDisplay": "(+33) 6 24 72 64 58", //Your phone for the display, the one that a human can easily read!
 		"email": "mart.verdier@gmail.com", //Your email
 		"picture": "resources/profile.png", //The relative path to your picture in the project's folder (relative to resume.html)
-		"github": "mverdier", //Your GitHub link, if you have one
-		"birthday": new Date(1994, 10, 27) //That's your birthday!
+		"github": "mverdier" //Your GitHub link, if you have one
 	};
 
 	/*
