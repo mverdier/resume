@@ -31,7 +31,7 @@
 						<img ng-src="{{ person.picture }}" class="profile-picture">
 					</div>
 					<div class="col l6 s12">
-						<h4 class="name">{{ person.name }} <span>{{ person.birthday | date:'dd/MM/yyyy' }} ({{ calculateAge(person.birthday) }})</span></h4>
+						<h4 class="name">{{ person.name }} <span>{{ person.birthdate | date:'dd/MM/yyyy' }} ({{ calculateAge(person.birthday) }})</span></h4>
 						<h4 class="role">{{ person.role }}</h4>
 					</div>
 					<div class="col l4 s12 right-align contact">

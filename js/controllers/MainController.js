@@ -10,8 +10,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"phoneDisplay": "(+33) 6 24 72 64 58", //Your phone for the display, the one that a human can easily read!
 		"email": "mart.verdier@gmail.com", //Your email
 		"picture": "resources/profile.png", //The relative path to your picture in the project's folder (relative to resume.html)
-		"github": "mverdier", //Your GitHub link, if you have one
-		"birthday": new Date(1994, 10, 27) //That's your birthday!
+		"github": "mverdier" //Your GitHub link, if you have one
 	};
 
 	/*
@@ -173,6 +172,9 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	}
 	
 	You can put in as many categories as you like, with as many skills as you like.
+	Neither more or less are mandatory. You can have both, or only one, the webpage will adapt consequently.
+	You should still put at least one "more" or one "less". You don't /have to/ but otherwise you'll have
+	an empty card with just a title. But if that's your kind of stuff, go for it, who am I to stop you.
 	Be crative, that's the important stuff!
 	*/
 	$scope.skills = [{
@@ -223,9 +225,6 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		},
 		{
 			"name": "SQL"
-		}],
-		"less": [{
-			"name": "MariaDB"
 		}]
 	},
 	{
