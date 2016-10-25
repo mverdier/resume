@@ -36,13 +36,13 @@
 					</div>
 					<div class="col l4 s12 right-align contact">
 						<p ng-if="person.phone && person.phoneDisplay">
-							<a ng-href="tel:{{ person.phone }}"><i class="material-icons">phone</i>&nbsp{{ person.phoneDisplay }}</a>
+							<a ng-href="tel:{{ person.phone }}" target="_blank"><i class="material-icons">phone</i>&nbsp{{ person.phoneDisplay }}</a>
 						</p>
 						<p ng-if="person.email">
-							<a ng-href="mailto:{{ person.email }}"><i class="material-icons">mail</i>&nbsp{{ person.email }}</a>
+							<a ng-href="mailto:{{ person.email }}" target="_blank"><i class="material-icons">mail</i>&nbsp{{ person.email }}</a>
 						</p>
 						<p ng-if="person.github">
-							<a ng-href="https://github.com/{{ person.github }}"><img src="resources/GitHub-Mark/PNG/GitHub-Mark-32px.png" class="github-icon">&nbsp{{ person.github }}</a>
+							<a ng-href="https://github.com/{{ person.github }}" target="_blank"><img src="resources/GitHub-Mark/PNG/GitHub-Mark-32px.png" class="github-icon">&nbsp{{ person.github }}</a>
 						</p>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 							<div ng-if="contract.techs" class="job-techs">{{ contract.techs }}</div>  
 
 							<div class="job-url">
-								<a ng-href="{{ contract.url }}">{{ contract.displayUrl }}</a>
+								<a ng-href="{{ contract.url }}" target="_blank">{{ contract.displayUrl }}</a>
 							</div>
 						</div>
 					</div>
@@ -180,21 +180,21 @@
 		<footer class="page-footer green darken-1">
 			<div class="container grey-text text-lighten-4">
 				<div class="row" ng-if="!locale || locale == 'enUS'">
-					<p>Résumé designed and developed by <a href="http://martin-verdier.com/">Martin Verdier</a> around October 2016.  I'm not the best with front-end but I try!</p>
-					<p>OCTOCAT® is the property of GitHub, Inc. They allow its use on profiles or things like that, but I'd rather link back to them anyway <a href="https://github.com/logos">here</a>!</p>
-					<p>Speaking of which, this résumé is under the <a href="https://opensource.org/licenses/MIT">MIT License</a>, and you can easily use it as a template for yours, it's open-sourced right <a href="https://github.com/mverdier/resume">here on GitHub</a>!</p>
+					<p>Résumé designed and developed by <a href="http://martin-verdier.com/" target="_blank">Martin Verdier</a> around October 2016.  I'm not the best with front-end but I try!</p>
+					<p>OCTOCAT® is the property of GitHub, Inc. They allow its use on profiles or things like that, but I'd rather link back to them anyway <a href="https://github.com/logos" target="_blank">here</a>!</p>
+					<p>Speaking of which, this résumé is under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>, and you can easily use it as a template for yours, it's open-sourced right <a href="https://github.com/mverdier/resume" target="_blank">here on GitHub</a>!</p>
 				</div>
 
 				<div class="row" ng-if="locale == 'frFR'">
-					<p>CV réalisé et développé par <a href="http://martin-verdier.com/">Martin Verdier</a> autour d'Octobre 2016.  Je ne suis pas le meilleur en front-end mais je fais des efforts !</p>
-					<p>OCTOCAT® est la propriété de GitHub, Inc. Ils autorisent sont utilisation sur des profils et ce genre de choses, mais je préfère rediriger vers eux <a href="https://github.com/logos">ici</a> tout de même !</p>
-					<p>À ce propos, ce CV est sous <a href="https://opensource.org/licenses/MIT">license MIT</a>, et vous pouvez l'utiliser pour votre propre usage, il est en open-source <a href="https://github.com/mverdier/resume">ici sur GitHub</a> !</p>
+					<p>CV réalisé et développé par <a href="http://martin-verdier.com/" target="_blank">Martin Verdier</a> autour d'Octobre 2016.  Je ne suis pas le meilleur en front-end mais je fais des efforts !</p>
+					<p>OCTOCAT® est la propriété de GitHub, Inc. Ils autorisent sont utilisation sur des profils et ce genre de choses, mais je préfère rediriger vers eux <a href="https://github.com/logos" target="_blank">ici</a> tout de même !</p>
+					<p>À ce propos, ce CV est sous <a href="https://opensource.org/licenses/MIT" target="_blank">license MIT</a>, et vous pouvez l'utiliser pour votre propre usage, il est en open-source <a href="https://github.com/mverdier/resume" target="_blank">ici sur GitHub</a> !</p>
 				</div>
 			</div>
 			<div class="footer-copyright">
 				<div class="container">
 					© 2016 Martin Verdier
-					<a class="grey-text text-lighten-4 right" href="http://martin-verdier.com/LICENSE">MIT License</a>
+					<a class="grey-text text-lighten-4 right" href="http://martin-verdier.com/LICENSE" target="_blank">MIT License</a>
 				</div>
 			</div>
 		</footer>
