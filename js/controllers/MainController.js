@@ -286,9 +286,9 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	// Function calculating the age, courtesy of user pxixelbits on StackOverflow
 	// http://stackoverflow.com/a/24883386/4197752
 	$scope.calculateAge = function calculateAge(birthday) { // birthday is a date
-    	var ageDifMs = Date.now() - birthday.getTime();
-    	var ageDate = new Date(ageDifMs); // miliseconds from epoch
-    	return Math.abs(ageDate.getUTCFullYear() - 1970);
+		var ageDifMs = Date.now() - birthday.getTime();
+		var ageDate = new Date(ageDifMs); // miliseconds from epoch
+		return Math.abs(ageDate.getUTCFullYear() - 1970);
 	}
 
 }]);
