@@ -95,7 +95,7 @@
 
 						<div class="card-content">
 
-							<h4 class="skill-category">{{ category.category }}</h4>
+							<h4>{{ category.category }}</h4>
 
 							<div class="row">
 
@@ -134,7 +134,7 @@
 					</div>
 				</div>
 
-				<div class="personal col l6 misc s12 pull-l6" ng-if="likes || languages">
+				<div class="col l6 misc s12 pull-l6" ng-if="likes || languages">
 
 					<div ng-if="languages && likes">
 						<h3 ng-if="!locale || locale == 'enUS'">Miscellaneous Information</h3>
@@ -151,7 +151,7 @@
 						<h3 ng-if="locale == 'frFR'">Langues</h3>
 				</div>
 
-					<div class="likes card hoverable" ng-if="likes">
+					<div class="card hoverable" ng-if="likes">
 						<div class="card-content">
 
 							<div ng-if="languages">
@@ -163,7 +163,7 @@
 						</div>
 					</div>
 
-					<div class="languages card hoverable" ng-if="languages">
+					<div class="card hoverable" ng-if="languages">
 						<div class="card-content">
 						<div ng-if="likes">
 								<h4 ng-if="!locale || locale == 'enUS'">Languages</h4>
