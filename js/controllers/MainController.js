@@ -180,10 +180,13 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	$scope.skills = [{
 		"category": "Object-Oriented Programming",
 		"more": [{
-			"name": "Java"
+			"name": "Java 8"
 		},
 		{
 			"name": "PHP"
+		},
+		{
+			"name": "Android"
 		},
 		{
 			"name": "C#"
