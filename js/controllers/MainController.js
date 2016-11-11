@@ -29,7 +29,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	*/
 	$scope.school = [{
 		"title": "APSIO Professional Bachelor",
-		"dates": "2012-2014",
+		"dates": "2014-2015",
 		"location": "Blagnac IUT, France"
 	},
 	{
@@ -39,7 +39,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	},
 	{
 		"title": "Baccalauréat Scientifique (Engineer Science Option), mention AB",
-		"dates": "2012-2014",
+		"dates": "2012",
 		"location": "Antoine Bourdelle High School, Montauban, France"
 	}]
 
