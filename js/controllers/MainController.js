@@ -29,12 +29,12 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	*/
 	$scope.school = [{
 		"title": "APSIO Professional Bachelor",
-		"dates": "2014-2015",
+		"dates": "2014 - 2015",
 		"location": "Blagnac IUT, France"
 	},
 	{
 		"title": "DUT in Computer Science (2-year diploma)",
-		"dates": "2012-2014",
+		"dates": "2012 - 2014",
 		"location": "Rodez IUT, France"
 	},
 	{
