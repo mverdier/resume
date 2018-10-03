@@ -69,7 +69,20 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	*/
 	$scope.work = [{
 		"type": "Permanent contract",
-		"dates": "2015 - Current",
+		"dates": "2018 - Current",
+		"role": "Software Engineer",
+		"company": "Adyen",
+		"location": "Amsterdam, The Netherlands",
+		"techs": "Java, PostgreSQL, XML",
+		"url": "https://www.adyen.com/",
+		"displayUrl": "www.adyen.com",
+		"tasks": [{
+			"content": "Working on the onboarding team: writing software for checking new merchants' information."
+		}]
+	},
+	{
+		"type": "Permanent contract",
+		"dates": "2015 - 2018",
 		"role": "Lead Java developer",
 		"company": "Telegrafik",
 		"location": "Toulouse, France",
@@ -283,7 +296,7 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 	},
 	{
 		"name": "English",
-		"level": "Full Professional Fluency (975/990 TOEIC)"
+		"level": "Bilingual"
 	}];
 
 	// Function calculating the age, courtesy of user pxixelbits on StackOverflow
