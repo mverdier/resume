@@ -6,8 +6,8 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http) {
 		"name": "Martin Verdier", //That's your name!
 		"birthdate": new Date(1994, 10, 27), //Here is your birthdate
 		"role": "Backend software developer", //The role you're probably looking for
-		"phone": "0033624726458", //Your phone (This is the version that's going to be called, put it in a single block!)
-		"phoneDisplay": "(+33) 6 24 72 64 58", //Your phone for the display, the one that a human can easily read!
+		"phone": "0031683811277", //Your phone (This is the version that's going to be called, put it in a single block!)
+		"phoneDisplay": "(+31) 6 83 81 12 77", //Your phone for the display, the one that a human can easily read!
 		"email": "mart.verdier@gmail.com", //Your email
 		"picture": "resources/profile.png", //The relative path to your picture in the project's folder (relative to resume.html)
 		"github": "mverdier" //Your GitHub link, if you have one
